@@ -1,0 +1,148 @@
+* {margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;}
+
+body {background-color: #f4f4f4;}
+
+/* HEADER */
+header {width: 100%;
+    height: 100px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;}
+
+header a {text-decoration: none;}    
+
+.navbar_menu--list li {display: inline-block;
+    list-style-type: none;
+    padding: 0px 20px;
+    color: #c0b283;
+    font-size: 18px;}
+header .logo {width: 200px;
+    height: 80px;}
+    ul li:hover {
+        background-color: #c0b283;
+        color: white;
+        transition: all 0.5s;}
+    /* BOTON NAV RESPONSIVE */
+#btn-menu {display: none;}
+header label {display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;}
+
+/*IMAGEN INTRO */
+    
+.mainbanner {width: 100%;
+    height: 500px;
+    background-color: rgb(48, 47, 47);
+    background-blend-mode: soft-light;
+    background-image: url(https://assets.teenvogue.com/photos/5e6bffbbdee1770008c6d9bd/16:9/w_2560%2Cc_limit/GettyImages-577674005.jpg);
+    background-size: cover;}
+.mainbanner img {width: 100%;
+height: 400px;}
+
+/* NOVEDADES */
+.novedades_texto {margin-left: 3%;
+margin-top: 5%;}
+
+
+/* LO MAS VENDIDO */
+.vendidos_texto {margin-left: 3%;
+margin-top: 5%;}
+
+/* CATALOGO */
+.catalogo_texto {text-align: center;
+margin-top: 5%;}
+.catalogo_texto h1 {color: #373737;}
+
+/* FOOTER */
+footer {height: 200px;
+width: 100%;
+background-color: #dcd0c0;
+display: flex;
+font-weight: bold;
+justify-content: center;
+align-items: center;
+color: #373737;
+flex-direction: column;
+text-align: center;
+font-family: 'Roboto', sans-serif;}
+
+.redes {display: flex;}
+
+/* FOOTER */
+footer {height: 200px;
+    width: 100%;
+    background-color: #dcd0c0;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: #373737;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;}
+
+.redes {display: flex;}
+/* MEDIA QUERIES */
+@media (max-width: 768px)  {
+    header label {display: block;} 
+    .logo {margin: -140%}
+    .navbar_menu {position: absolute;
+        background-color: #c0b283;
+        margin-bottom: 93px;
+        width: 20%;
+        margin-left: -100%;
+        transition: all 0.5s;}
+    .navbar_menu--list li {color: #f4f4f4;
+        margin-left: -25%;}
+    .navbar_menu--list {display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        margin-top: 5%;}
+       ul li:hover {
+        background-color: white;
+        color: #c0b283;
+        transition: all 0.5s;}
+    #btn-menu:checked ~ .navbar_menu {margin-left: 0;
+        margin-top: 42%;}
+        .container_colecciones--texto {padding: 0%;}
+        .container_campaña--texto {padding: 0%;}
+        form {width: 90%;}
+        footer {margin-left: 0%;
+            width: 100%;}
+}
+
+@media (max-width: 425px) { header {top: 0;
+    left: 0;}
+    
+    header label {display: block;
+        margin-left: 30px;} 
+    .navbar_menu {background-color: #c0b283;
+        margin-bottom: -70px;
+        margin-left: -100%;
+        width: 30%;
+        transition: all 0.5s;}
+    .navbar_menu--list li {color: #f4f4f4;
+        margin-left: -25%;
+        font-size: 15px;
+        margin-top: 10%;}
+    ul li:hover {
+        background-color: white;
+        color: #c0b283;
+        transition: all 0.5s;}
+    .logo {margin-left: -55%;
+        }
+    #btn-menu:checked ~ .navbar_menu {margin-left: 0;
+        margin-top: 42%;}
+        .mainbanner {height: 300px;}
+    
+}
